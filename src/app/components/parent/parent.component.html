@@ -1,4 +1,7 @@
 <p>parent works!</p>
+<p>The hero's birthday is {{ birthday | date:format }}</p>
+<p>The chained hero's birthday is{{ birthday | date | uppercase}}</p>
+<button (click)="toggleFormat()">Toggle Format</button>
+<p>{{ amount | currency:'EUR' }}</p>
 <app-child *ngFor="let child of index" [index]="child"></app-child>
-
 <app-out-putchild (newItemEvent)="addItem($event)"></app-out-putchild>
