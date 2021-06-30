@@ -11,3 +11,7 @@
     <p>The following paragraph is read only. Try clicking the button!</p>
 </ng-template>
 <p [contentEditable]="canEdit">{{ message }}</p>
+
+<ul>
+    <li *ngFor="let name of names">{{name}}</li>
+</ul>

@@ -11,6 +11,7 @@ export class VariableUseComponent implements OnInit {
   sayHelloId:Number = 1;
   canClick:boolean = false;
   canEdit:boolean = false;
+  names:String[] =['zubair','taha','bukhari'];
   
   constructor() { }
 
