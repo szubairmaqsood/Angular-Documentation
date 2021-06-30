@@ -1,0 +1,4 @@
+<p>parent works!</p>
+<app-child *ngFor="let child of index" [index]="child"></app-child>
+
+<app-out-putchild (newItemEvent)="addItem($event)"></app-out-putchild>
